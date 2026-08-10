@@ -14,14 +14,13 @@
     3 + 2 = 6
 
     Approach:
-
     Use a hash map to store numbers we have already seen, this will make the solution faster than brute force. O(1) lookups
 
-    1. Enumerate through the nums list to get the index amd value
-    2. Calculate the complement (target - num)
-    3. Check if the complement is already in the hash map
-    4. If the complement is already in the hashmap return the two indicies (if complement in seen)
-    5. Otherwise store the current number and its index. (seen[num] = i)
+    1. Enumerate through the nums list to get the index and value.
+    2. Calculate the complement (target - num).
+    3. Check if the complement is already in the hash map.
+    4. If the complement is already in the hashmap return the two indicies (if complement in seen).
+    5. Otherwise store the current number and its index. (seen[num] = i).
 
     Time Complexity: O(n)
     Space Complexity: O(n)
