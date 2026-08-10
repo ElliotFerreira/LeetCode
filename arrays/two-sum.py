@@ -23,6 +23,12 @@
     4. If the complement is already in the hashmap return the two indicies (if complement in seen)
     5. Otherwise store the current number and its index. (seen[num] = i)
 
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+
+    The time complexity of this approach is O(n) because in the worst case we loop through each element once and inserts and lookups are O(1).
+    The space complexity of this approach is O(n) because in the worst case the seen hashmap stores every element in the array once.
+
 """
 
 def twoSum(self, nums, target):
