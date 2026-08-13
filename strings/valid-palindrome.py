@@ -1,6 +1,6 @@
 # Valid Palindrome
 # Difficulty: Easy
-# Categroy: Two Pointers, String
+# Category: Two Pointers, String
 
 """
     Problem: A phrase is a palindrome if after converting all the uppercase letters into lower case letters and removing the alphanumeric characters
