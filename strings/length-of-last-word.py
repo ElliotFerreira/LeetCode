@@ -24,5 +24,25 @@
 
     The time complexity of this approach is O(n) because we might have to look through the whole string.
     The space complexity of this approach is O(1) because we don't use any extra memory like data structures just updating variables.
-    
+
 """
+
+def lengthOfLastWord(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+
+        right = len(s) - 1
+
+        while right >= 0 and s[right] == " ":
+            right -= 1
+        
+        
+        length = 0
+
+        while right >= 0 and s[right] != " ":
+            length += 1
+            right -= 1
+
+        return length
